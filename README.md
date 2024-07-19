@@ -1,5 +1,5 @@
 
-# Solana Swap and Token Overview Bot
+# Solana Sniper and Swap Bot
 
 This repository contains two Python scripts designed to interact with the Solana blockchain, perform token swaps, and analyze new token listings. The scripts leverage various APIs to provide comprehensive insights and functionalities for users interested in Solana-based tokens.
 
@@ -21,17 +21,17 @@ This repository contains two Python scripts designed to interact with the Solana
 ## Installation
 
 1. Clone the repository:
-   \`\`\`bash
+   `
    git clone https://github.com/yourusername/solana-swap-token-overview.git
    cd solana-swap-token-overview
-   \`\`\`
+   `
 
 2. Install required dependencies:
-   \`\`\`
+   `
    pip install -r requirements.txt
-   \`\`\`
+   `
 
-3. Set up your \`.env\` file with api keys.
+3. Set up your `.env` file with api keys.
   
 
 ## Usage
@@ -39,19 +39,20 @@ This repository contains two Python scripts designed to interact with the Solana
 ### Token Swap
 
 To perform a token swap, run:
-\`\`\`
+`
 python solana_swap.py <token_mint_address> <amount>
-\`\`\`
-Replace \`<token_mint_address>\` with the mint address of the token you want to swap to and \`<amount>\` with the amount of the quote token.
+`
+Replace `<token_mint_address>` with the mint address of the token you want to swap to and `<amount>` with the amount of the quote token in lamports.
+1 SOL = 1 billion lamports
 
 ### Token Overview
 
 To run the token discovery and filtering process:
-\`\`\`
+`
 python birdeye_bot.py
-\`\`\`
+`
 This will fetch, filter, and analyze new token listings on Solana.
 
 ## Configuration
 
-You can customize the filtering criteria in the \`birdeye_bot.py\` script to suit your specific needs.
+You can customize the filtering criteria in the `birdeye_bot.py` script to suit your specific needs.

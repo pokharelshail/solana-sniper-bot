@@ -27,22 +27,19 @@ This repository contains two Python scripts designed to interact with the Solana
    \`\`\`
 
 2. Install required dependencies:
-   \`\`\`bash
+   \`\`\`
    pip install -r requirements.txt
    \`\`\`
 
-3. Set up your \`dontshare.py\` file with the following variables:
-   \`\`\`python
-   key = 'your_solana_private_key'
-   birdeye = 'your_birdeye_api_key'
-   \`\`\`
+3. Set up your \`.env\` file with api keys.
+  
 
 ## Usage
 
 ### Token Swap
 
 To perform a token swap, run:
-\`\`\`bash
+\`\`\`
 python solana_swap.py <token_mint_address> <amount>
 \`\`\`
 Replace \`<token_mint_address>\` with the mint address of the token you want to swap to and \`<amount>\` with the amount of the quote token.
@@ -50,7 +47,7 @@ Replace \`<token_mint_address>\` with the mint address of the token you want to 
 ### Token Overview
 
 To run the token discovery and filtering process:
-\`\`\`bash
+\`\`\`
 python birdeye_bot.py
 \`\`\`
 This will fetch, filter, and analyze new token listings on Solana.
